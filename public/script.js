@@ -4,7 +4,7 @@ document.getElementById('sla-form').addEventListener('submit', async function (e
     const sla = document.getElementById('sla').value;
     const period = document.getElementById('period').value;
   
-    const response = await fetch('/netlify/functions/sla.mjs', {
+    const response = await fetch('https://exercice6.netlify.app/.netlify/functions/sla', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
